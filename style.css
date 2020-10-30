@@ -1,0 +1,749 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #5271ff;
+    width:auto;
+    height:auto;
+    
+}
+
+h1{
+
+    font-size: 9rem;
+    color:white;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tagline{
+
+    font-size:30px;
+    color:White;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom:8px;
+    text-transform: uppercase;
+}
+
+
+  .areabtn{
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(13, 13, 65);
+    padding:5px;
+    
+  }
+
+.btn-ord{
+
+    width:12rem;
+    height:8rem;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:18px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+
+
+.area-apps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+ 
+
+}
+
+
+/* APP TITLES */
+.app-heading{
+
+    font-family: 'Public Sans', sans-serif;
+    text-transform: uppercase;
+    margin-top:10px;
+    color:white;
+  }
+
+
+/* Calculator JS */
+
+
+    #CalculatorJS {
+        width:35rem;
+        height:40rem;
+        text-align: center;
+        background-color: rgb(13, 13, 65);
+        margin-top: 20px;
+        justify-content: right;
+        align-items: flex-end;
+        margin:10px;
+        border-radius:50px;
+        
+        
+      }
+
+
+
+      #calculator{
+
+        width:320px;
+        height: 520px;
+        background-color:#fafafa;
+        margin:0 auto;
+        top:20px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #result{
+    
+        height: 120px;
+    }
+    
+    #keyboard{
+    
+        height:400px;
+    }
+    
+    #history{
+    
+        text-align: right;
+        height:20px;
+        margin: 0 20px;
+        padding-top: 20px;
+        font-size:15px;
+        color:#919191;
+    }
+    
+    #output{
+    
+    
+        text-align: right;
+        height:60px;
+        margin:10px 20px;
+        font-size:30px;
+       
+    }
+    
+    #keyobard{
+        
+        height:400px;
+    
+    }
+    
+    .operator, .number, .empty{
+    
+        width:50px;
+        height: 50px;
+        margin:15px;
+        float:left;
+        border-radius:50%;
+        border-width: 0;
+        font-weight: bold;
+        font-size:15px;
+    }
+    
+    .number , .empty{
+    
+        background-color: #ebf7ff;
+    }
+    
+    .number, .operator{
+    
+        cursor: pointer;
+    }
+    
+    .operator:active, .number:active{
+    
+        font-size: 13px;
+    }
+    
+    .operator:focus, .number:focus, .empty:focus{
+    
+        outline:0;
+    }
+    
+    
+    .divider{
+    
+        font-size:20px;
+        background-color: rgb(0, 190, 149);
+    }
+    
+    button:nth-child(8){
+    
+        font-size:20px;
+        background-color: rgb(243, 170, 13);
+    }
+    
+    button:nth-child(12){
+    
+        font-size:20px;
+        background-color: rgb(246, 81, 163);
+    }
+    
+    button:nth-child(16){
+    
+        font-size:20px;
+        background-color: rgb(73, 70, 245);
+    }
+    
+    button:nth-child(20){
+    
+        font-size:20px;
+        background-color: rgb(138, 63, 138);
+    }
+
+
+
+    
+    
+    /* Address Book Js */
+
+    #AddressBook{
+
+
+        width:85%;
+        height:100%;
+        text-align: center;
+        background-color:  rgb(13, 13, 65);
+        margin-top: 20px;
+        justify-content: right;
+        align-items: flex-end;
+        margin:10px;
+        border-radius:50px;
+     }
+
+
+
+    .container {
+
+        width:960px;
+        margin:auto;
+        margin-bottom: 20px;
+        
+    }
+    
+     .title {
+        padding:10px;
+        border-bottom:2px solid;
+        background:transparent;
+        text-align: center;
+        
+    } 
+    
+ /*    .title h1 {
+        margin:4px;
+        font-family: 'Public Sans', sans-serif;
+        text-shadow:0px 0px 1px rgba(0,0,0,0.4);
+        text-transform: uppercase;
+        color:rgb(255, 255, 255);
+    } */
+    
+    .quickadd {
+        padding:5px;
+        border-bottom:1px solid;
+        align-items: center;
+        text-align: center;
+        background-color:rgb(116, 187, 235); 
+        
+        
+    }
+    
+    #QuickAdd {
+        
+        background:rgb(29, 180, 92);
+        color:white;
+        border:1px solid;
+        border-radius: 5px;
+        text-shadow:0px 0px 1px;
+        width:20%;
+        padding:10px 0;
+        font-size: larger;
+        cursor:pointer;
+    
+    }
+    
+    .quickaddForm {
+        height:auto;
+        padding:20px;
+        background:rgb(178, 220, 248);
+        overflow:hidden;
+        display:none;
+        justify-content: center;
+        
+    }
+    
+    .quickaddForm label {
+        position:relative;
+        display:block;
+        width:300px;
+        height:auto;
+        float:left;
+        font-family:sans-serif;
+        font-size:15px;
+        padding:10px;
+        font-weight:bold;
+    }
+    
+    .quickaddForm input,textarea {
+        border:1px solid;
+        margin: 4px;
+        width:400px;
+        padding:10px;
+        font-weight:bold;
+        border-radius:5px;
+        box-shadow:inset 0px 0px 10px rgba(0,0,0,0.2);
+    }
+    
+    
+    
+    
+    
+    #Add,#Cancel {
+        padding:10px 0;
+        width:15%;
+        margin:10px;
+        font-size:larger;
+        position:relative;
+        left:150px;
+        border:1px solid;
+        border-radius:5px;
+        font-weight:bold;
+        cursor:pointer;
+        background-color:  rgb(241, 102, 47); 
+        color:white; 
+      
+    
+    }
+    
+    
+    
+    
+    .entry {
+        background:rgb(178, 220, 248);
+        width:960px;
+        height:60px;
+        border-bottom:1px solid;
+        padding:auto;
+        padding-bottom: 10px;
+        padding-top:5px;
+    }
+    
+    
+    .entry .name {
+        width:100px;
+        float:left;
+        padding:11px;
+    }
+    
+    .entry .email {
+        width:200px;
+        float:left;
+        padding:11px;
+    
+    }
+    
+    
+    .entry .phone {
+        width:150px;
+        float:left;
+        padding:11px;
+    }
+    
+    .entry .address {
+        width:200px;
+        float:left;
+        padding:11px;
+    }
+    
+    .entry .city {
+        width:100px;
+        float:left;
+        padding:11px;
+    }
+    
+    .entry .del {
+        width:100px;
+        float:left;
+        padding:10px;
+    }
+    
+    .entry p {
+        margin:0px;
+        font-family:sans-serif;
+        font-size:12px;
+        text-shadow:0px 0px 1px rgba(0,0,0,0.4);
+    }
+    
+    .entry .del a {
+        font-family:sans-serif;
+        text-transform: uppercase;
+        color:#FFF;
+        font-size:14px;
+        padding:5px 5px;
+        background:rgb(255,100,100);
+        border-radius:8px;
+        text-decoration:none;
+       
+    }
+    
+
+   /* Todo List App */
+
+    #myTodo {
+        width:35rem;
+        height:40rem;
+        text-align: center;
+        background-color: rgb(13, 13, 65);
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin:10px;
+        border-radius:50px;
+    }
+
+    .container-list{
+
+        background-color:rgb(236, 236, 253);
+        align-items: center;
+        flex-direction: row; 
+        border-radius: 20px;
+        margin-top:20px;
+        padding-top:10px; 
+        
+       
+    
+    } 
+
+
+    
+    .heading{
+    
+        font-weight: 800;
+        color: lime;
+    }
+    
+    .input_div{
+    
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+    
+    .input_div .input {
+    
+        padding: 0.5rem 1rem;
+        height:50px;
+        outline:none;
+        border:none;
+        background-color:#ffff;
+        width:400px;
+        font-size:1.15rem;
+        margin:0.25rem;
+        border-radius: 25px;
+    }
+    
+    .addButton{
+    
+        height:50px;
+        width:50px;
+        border-radius:25px;
+        outline:none;
+        border:none;
+        background-color:white;
+        color:#fff;
+        margin:0.25rem;
+        background-color:rgb(246, 81, 59);
+        cursor:pointer;
+        
+    }
+    
+    .addButton:hover{
+    
+        opacity: 0.7;
+    }
+    
+    .todobox{
+    
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+        margin-top: 2rem;
+        
+
+    
+    }
+    
+    .item{
+    
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom:4px solid rgb(83, 120, 243);
+    
+    }
+    
+    .item_input {
+    
+        background:none;
+        outline:none;
+        color:rgb(3, 1, 1);
+        border:none;
+        width: 320px;
+        font-size: 1.4rem;
+        font-family: 'Public Sans', sans-serif; 
+    
+    }
+    
+    .editButton{
+    
+        font-size: 1.4rem;
+        font-family: 'Public Sans', sans-serif;
+        background: none;
+        outline:none;
+        color:lime;
+        border:none;
+        cursor: pointer;
+
+    
+    
+    }
+    
+    .removeButton{
+    
+        font-size: 1.4rem;
+        font-family: 'Public Sans', sans-serif;
+        background: none;
+        outline:none;
+        color:rgb(243, 57, 57);
+        border:none;
+        cursor: pointer;
+        
+    }
+    
+    .plus{
+    
+        
+        font-weight: 800;
+    }
+
+
+
+        
+      /* Calendar */
+
+#myCalendar{
+
+    width:35rem;
+    height:40rem;
+    text-align: center;
+    background-color: rgb(13, 13, 65);;
+    margin-top: 20px;
+    justify-content: right;
+    align-items: flex-end;
+    margin:10px;
+    border-radius:50px;
+}
+
+
+
+.container-box{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.box{
+
+    margin-top:50px;
+    font-size:20px;
+    font-weight: bold;
+    border-radius: 14px;;
+
+}
+
+
+    .jsCalendar.custom-purple tbody td.jsCalendar-current {
+        background-color: #800080;
+    }
+    .jsCalendar.custom-purple *::selection {
+        background: #800080;
+    }
+    .jsCalendar.custom-purple *::-moz-selection {
+        background: #800080;
+    }
+    .jsCalendar.material-theme.custom-purple thead {
+        background-color: #800080;
+    }
+    .jsCalendar.material-theme.custom-purple thead .jsCalendar-nav-left:hover,
+    .jsCalendar.material-theme.custom-purple thead .jsCalendar-nav-right:hover {
+        background-color: #660066;
+    }
+    .jsCalendar.classic-theme.custom-purple thead {
+        background-color: #800080;
+    }
+    .jsCalendar.classic-theme.custom-purple thead .jsCalendar-nav-left:hover,
+    .jsCalendar.classic-theme.custom-purple thead .jsCalendar-nav-right:hover {
+        background-color: #660066;
+    }
+
+
+
+
+        /* Weather */
+
+        #myWeather{
+
+            width:35rem;
+            height:40rem;
+            text-align: center;
+            background-color: rgb(13, 13, 65);;
+            margin-top: 20px;
+            justify-content: right;
+            align-items: flex-end;
+            margin:10px;
+            border-radius:50px;
+        
+        }
+
+
+        .container-weather{
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        
+        }
+
+
+          
+          .app-wrap {
+          
+            text-align: center;
+            align-items: center;
+            background-color: rgb(101, 62, 231);
+            width: 500px;
+            height: auto;
+            margin-top:15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+          }
+          
+          header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 15px 15px;
+          }
+          
+          header input {
+            width: 100%;
+            max-width: 280px;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 16px 0px 16px 0px;
+            border-bottom: 3px solid #DF8E00;
+            
+            color: #313131;
+            font-size: 20px;
+            font-weight: 300;
+            transition: 0.2s ease-out;
+          }
+          
+          header input:focus {
+            background-color: rgba(255, 255, 255, 0.6);
+          }
+          
+          main {
+            flex: 1 1 100%;
+            padding: 25px 25px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          
+          .location .city {
+            color: #FFF;
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+          
+          .location .date {
+            color: #FFF;
+            font-size: 16px;
+          }
+          
+          .current .temp {
+            color: #FFF;
+            font-size: 102px;
+            font-weight: 900;
+            margin: 30px 0px;
+            text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+          }
+          
+          .current .temp span {
+            font-weight: 500;
+          }
+          
+          .current .weather {
+            color: #FFF;
+            font-size: 32px;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 15px;
+            text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+          }
+          
+          .current .hi-low {
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 500;
+            text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+          }
+    
+
+
+        /* Evidenziatore */
+
+
+        .selected{
+
+            color:blue;
+        }
+
+
+
+      
+

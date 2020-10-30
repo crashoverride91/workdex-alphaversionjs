@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workdex - Dashboard Multitasking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- JS Calendar Libray -->
+     <!-- jsCalendar v1.4.3 Javascript and CSS from unpkg cdn -->
+     <script src="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.js" integrity="sha384-JqNLUzAxpw7zEu6rKS/TNPZ5ayCWPUY601zaig7cUEVfL+pBoLcDiIEkWHjl07Ot" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.css" integrity="sha384-+OB2CadpqXIt7AheMhNaVI99xKH8j8b+bHC8P5m2tkpFopGBklD3IRvYjPekeWIJ" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1>Workdex</h1>
+
+    <h2 class="tagline">The your digital and smart workstation</h2>
+
+    <div class="areabtn">
+        <button onclick="myFunction()" class="btn-ord selected">ToDo List</button>
+        <button onclick="myCalculator()" class="btn-ord selected">Calculator </button>
+        <button onclick="myWeatherFunction()" class="btn-ord selected">Weather</button>
+        <button onclick="myTechFunction()" class="btn-ord selected">Calendar </button>
+        <button onclick="myAddress()" class="btn-ord selected">Address Book</button>
+    </div>
+    
+
+<!-- Workdex App Container -->
+  
+    <div class="area-apps">
+
+        <!-- Calculator View -->
+        <div id="CalculatorJS">
+
+            <h2 class="app-heading">Calculator </h2>
+            <div id="calculator">
+                <div id="result">
+                    <div id="history"> 
+                        <p id="history-value"></p>
+                    </div>
+                    <div id="output">
+                        <p id="output-value"></p>
+                    </div>
+                </div>
+                <div id="keyboard">
+                    <button class="operator" id="clear">C</button>
+                    <button class="operator" id="backspace">CE</button>
+                    <button class="operator" id="%">%</button>
+                    <button class="operator divider" id="/">&#247;</button>
+                    <button class="number" id="7">7</button>
+                    <button class="number" id="8">8</button>
+                    <button class="number" id="9">9</button>
+                    <button class="operator" id="*">&times;</button>
+                    <button class="number" id="4">4</button>
+                    <button class="number" id="5">5</button>
+                    <button class="number" id="6">6</button>
+                    <button class="operator" id="-">-</button>
+                    <button class="number" id="1">1</button>
+                    <button class="number" id="2">2</button>
+                    <button class="number" id="3">3</button>
+                    <button class="operator" id="+">+</button>
+                    <button class="empty" id="empty"></button>
+                    <button class="number" id="0">0</button>
+                    <button class="empty" id="empty"></button>
+                    <button class="operator" id="=">=</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ToDo List View -->
+        <div id="myTodo">
+            <h2 class="app-heading">ToDo List</h2>
+            <div class="container-list">
+
+                <div class="input_div">
+                    <input type="text" class="input" placeholder="What do you want to do...">
+                    <button class="addButton"><i class="fas fa-plus"></i></button>
+                </div>
+            
+                <div class="todobox">
+                   <!--  <div class="item">
+                        <input type="text" class="item_input"  disabled>
+                        <button class = "editButton">Edit</button>
+                        <button class="removeButton">Remove</button>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Weather App  -->
+        <div id="myWeather">
+            <h2 class="app-heading">Weather </h2>
+            <div class="container-box">
+                <div class="app-wrap">
+                  <header>
+                    <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+                  </header>
+                  <main>
+                    <section class="location">
+                      <div class="city">Rome, IT</div>
+                      <div class="date">Thursday 10 January 2020</div>
+                    </section>
+                    <div class="current">
+                      <div class="temp">15<span>°c</span></div>
+                      <div class="weather">Sunny</div>
+                      <div class="hi-low">13°c / 16°c</div>
+                    </div>
+                  </main>
+                </div>
+              </div>
+        </div>
+
+        <!-- Calendar -->
+        <div id="myCalendar">
+            <h2 class="app-heading">Calendar</h2>
+            <div class="container-weather">
+                <div class="auto-jsCalendar material-theme custom-purple box">
+                </div>
+            </div>
+        </div> 
+
+  
+        <!-- Address Contacts Book View -->
+        <div id="AddressBook">
+            <div class="container">
+                <div class="title">
+                    <h2 class="app-heading">Address Contacts Book</h2>
+                </div>
+                <div class="quickadd"><button id="QuickAdd">+ ADD CONTACT</button></div>
+                <div class="quickaddForm">
+                    <label for="fullname">Name</label><input type="text" id="fullname" class="formFields">
+                    <label for="phone">Phone</label><input type="text" id="phone" class="formFields">
+                    <label for="address">Address</label><textarea name="address" id="address" cols="30" rows="10" class="formFields"></textarea>
+                    <label for="city">City</label><input type="text" id="city" class="formFields">
+                    <label for="email">E-Mail</label><input type="text" id="email" class="formFields">
+                    <br><br>
+                    
+                    <button id="Add">Add Now</button><button id="Cancel">Cancel</button>
+                    
+                </div>
+                <div class="addbook">
+                     <div class="entry">
+                        <div class="name"><p>Mark Henry</p></div>
+                        <div class="email"><p>mark@info.com</p></div>
+                        <div class="phone"><p>9316523541</p></div>
+                        <div class="address"><p>House No. 8</p></div>
+                        <div class="city"><p>London</p></div>
+                        <div class="del"><a href="#">Delete</a></div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+
+
+    
+    </div>
+
+
+
+
+
+
+   
+ 
+   
+<!-- ToDo List -->
+<script src="todo.js"></script>
+<script src="todoapp.js"></script>
+   
+<!-- Calculator JS -->
+<script src="calculatordiv.js"></script>
+<script src="calculator.js"></script>
+
+<!-- Address Book JS -->
+<script src="address.js"></script>
+<script src="addressdiv.js"></script>
+
+<!-- Weather App-->
+<script src="map.js"></script>
+<script src="mapdiv.js"></script>
+
+<!-- Calendar JS -->
+<!-- jsCalendar script -->
+<script type="text/javascript" src="jsCalendar.js"></script>
+<script src="calendardiv.js"></script>
+<script src="calendar.js"></script>
+
+
+</body>
+</html>
