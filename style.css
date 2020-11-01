@@ -44,12 +44,12 @@ h1{
 
 .btn-ord{
 
-    width:12rem;
+    width:14rem;
     height:8rem;
     padding: 5px 5px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size:25px;
+    font-size:30px;
     margin: 5px;
     border-radius: 20px;
     border: 1px solid blue;
@@ -61,9 +61,15 @@ h1{
     
 }
 
+.imagex{
+    width:70px;
+}
+
+
 .btn-ord:hover{
 
     background-color:rgb(166, 189, 251);
+    color:blue;
 }
 
 
@@ -246,6 +252,7 @@ h1{
         width:960px;
         margin:auto;
         margin-bottom: 20px;
+        font-family: 'Rajdhani', sans-serif;
         
     }
     
@@ -271,6 +278,7 @@ h1{
         align-items: center;
         text-align: center;
         background-color:rgb(116, 187, 235); 
+        font-family: 'Rajdhani', sans-serif;
         
         
     }
@@ -323,8 +331,7 @@ h1{
     
     
     
-    
-    
+
     #Add,#Cancel {
         padding:10px 0;
         width:15%;
@@ -389,25 +396,25 @@ h1{
     }
     
     .entry .del {
-        width:100px;
+        width:150px;
         float:left;
         padding:10px;
     }
     
     .entry p {
         margin:0px;
-        font-family:sans-serif;
-        font-size:12px;
+        font-size:13px;
+        font-weight: bold;
         text-shadow:0px 0px 1px rgba(0,0,0,0.4);
     }
     
     .entry .del a {
-        font-family:sans-serif;
+        font-family: 'Rajdhani', sans-serif;
         text-transform: uppercase;
         color:#FFF;
-        font-size:14px;
+        font-size:15px;
         padding:5px 5px;
-        background:rgb(255,100,100);
+        background:rgb(231, 47, 47);
         border-radius:8px;
         text-decoration:none;
        
@@ -432,7 +439,6 @@ h1{
 
         background-color:rgb(236, 236, 253);
         align-items: center;
-        flex-direction: row; 
         border-radius: 20px;
         margin-top:20px;
         padding-top:10px; 
@@ -465,7 +471,7 @@ h1{
         outline:none;
         border:none;
         background-color:#ffff;
-        width:400px;
+        width:350px;
         font-size:1.15rem;
         margin:0.25rem;
         border-radius: 25px;
@@ -481,7 +487,7 @@ h1{
         background-color:white;
         color:#fff;
         margin:0.25rem;
-        background-color:rgb(246, 81, 59);
+        background-color:rgb(250, 72, 49);
         cursor:pointer;
         
     }
@@ -497,9 +503,7 @@ h1{
         flex-direction:column;
         justify-content:space-between;
         align-items:center;
-        margin-top: 2rem;
-        
-
+        margin-top:10px;
     
     }
     
@@ -507,7 +511,7 @@ h1{
     
         padding: 0.5rem;
         margin-bottom: 1.5rem;
-        border-bottom:4px solid rgb(83, 120, 243);
+        border-bottom:4px solid rgb(17, 33, 82);
     
     }
     
@@ -530,7 +534,7 @@ h1{
         font-family: 'Public Sans', sans-serif;
         background: none;
         outline:none;
-        color:lime;
+        color:rgb(0, 33, 219);
         border:none;
         cursor: pointer;
 
@@ -636,6 +640,7 @@ h1{
             align-items: flex-end;
             margin:10px;
             border-radius:50px;
+            font-family: 'Rajdhani', sans-serif;
         
         }
 
@@ -656,7 +661,7 @@ h1{
           
             text-align: center;
             align-items: center;
-            background-color: rgb(101, 62, 231);
+            background-color: rgb(0, 139, 219);
             width: 500px;
             height: auto;
             margin-top:15px;
@@ -680,7 +685,7 @@ h1{
             outline: none;
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 16px 0px 16px 0px;
-            border-bottom: 3px solid #DF8E00;
+            border-bottom: 3px solid #f5f2ee;
             
             color: #313131;
             font-size: 20px;
@@ -746,11 +751,11 @@ h1{
         /* Evidenziatore */
 
 
-        .selected{
+     /*    .selected{
 
             color:blue;
         }
-
+ */
 
 
       
