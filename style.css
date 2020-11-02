@@ -19,6 +19,7 @@ h1{
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 .tagline{
@@ -63,14 +64,17 @@ h1{
 
 .imagex{
     width:70px;
+   
 }
 
 
 .btn-ord:hover{
 
     background-color:rgb(166, 189, 251);
-    color:blue;
+    
+    
 }
+
 
 
 
@@ -78,8 +82,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top:10px;
    
- 
 
 }
 
@@ -358,13 +362,14 @@ h1{
         height:60px;
         border-bottom:1px solid;
         padding:auto;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         padding-top:5px;
+        
     }
     
     
     .entry .name {
-        width:100px;
+        width:110px;
         float:left;
         padding:11px;
     }
@@ -390,15 +395,15 @@ h1{
     }
     
     .entry .city {
-        width:100px;
+        width:110px;
         float:left;
         padding:11px;
     }
     
     .entry .del {
-        width:150px;
+        width:140px;
         float:left;
-        padding:10px;
+        margin:15px;
     }
     
     .entry p {
@@ -413,10 +418,11 @@ h1{
         text-transform: uppercase;
         color:#FFF;
         font-size:15px;
-        padding:5px 5px;
+        padding:8px 8px;
         background:rgb(231, 47, 47);
         border-radius:8px;
         text-decoration:none;
+        
        
     }
     
