@@ -269,7 +269,7 @@ h1{
 
 
 
-    .container {
+    .container-address {
 
         width:960px;
         margin:auto;
@@ -316,6 +316,7 @@ h1{
         padding:10px 0;
         font-size: larger;
         cursor:pointer;
+        outline:none;
     
     }
     
@@ -365,8 +366,10 @@ h1{
         border-radius:5px;
         font-weight:bold;
         cursor:pointer;
-        background-color:  rgb(241, 102, 47); 
+        background-color:  rgb(72, 56, 250); 
         color:white; 
+        outline:none;
+        text-transform: uppercase;
       
     
     }
@@ -782,15 +785,170 @@ h1{
     
 
 
-        /* Evidenziatore */
 
+    /* Responsive  */
 
-     /*    .selected{
+    @media screen and (max-width: 800px) {
 
-            color:blue;
+        
+        #CalculatorJS{
+
+            width:100%;
         }
- */
+        
+        #myTodo{
+
+            width:100%;
+        }
+
+        #myWeather{
+
+            width:100%;
+
+        }
+
+        #myCalendar{
+
+            width:100%;
+
+        }
 
 
+        #AddressBook{
+
+           width:100%; 
+        }
+
+        .version-title{
+
+            font-size: 15px;
+            top:0;
+            left:0;
+        }
+
+
+        .container-address{
+
+            width:auto;
+        }
+
+        .quickaddForm {
+            height:auto;
+            padding:20px;
+            background:rgb(178, 220, 248);
+            overflow:hidden;
+            align-items: left;
+            display:inline;
+             
+        }
+        
+        .quickaddForm label {
+            position:relative;
+            width:120px;
+            height:auto;
+            font-family:sans-serif;
+            font-size:15px;
+            color:black;
+            font-weight:bold;
+        }
+
+        .entry{
+            display:flex;
+            justify-content:space-evenly;
+            width:100%;
+           
+        }
+
+        .entry .name {
+            width:auto;
+            padding:1px;
+            
+        }
+        
+        .entry .email {
+            width:auto;
+            padding:1px;
+        }
+        
+        
+        .entry .phone {
+            width:auto;
+            padding:1px;
+        }
+        
+        .entry .address {
+            width:auto;
+            padding:1px;
+        }
+        
+        .entry .city {
+            width:auto;
+            padding:1px;
+        }
+        
+        .entry .del {
+            width:auto;
+            float:right;
+            margin-top:3px;
+        }
+        
+        .entry p {
+            margin:0px;
+            font-size:12px;
+            font-weight: bold;
+            text-shadow:0px 0px 1px rgba(0,0,0,0.4);
+        }
+        
+        .entry .del a {
+            font-family: 'Rajdhani', sans-serif;
+            text-transform: uppercase;
+            color:#FFF;
+            font-size:15px;
+            padding:5px;
+            background:rgb(231, 47, 47);
+            border-radius:8px;
+            text-decoration:none;
+            
+           
+        }
+
+        .areabtn{
+
+            width:100%;
+            display: flex;  
+            flex-wrap: wrap;
+
+        }
+
+        h1{
+
+           font-size: 35px;
+           font-weight: bold;
+            
+        }
+
+        .tagline{
+
+            font-size:20px;
+
+        }
+
+        .quickadd{
+
+            width:100%;
+        }
+
+        #Add, #Cancel{
+
+            width:30%;
+            float:left;
+        }
+
+        #QuickAdd{
+
+            width:50%;
+
+        }
+  
+      }
       
-
