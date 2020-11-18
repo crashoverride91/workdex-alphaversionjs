@@ -3,13 +3,14 @@
 ## The your smart and digital workstation
 
 #### Version: **Alpha 1.0**
-### Author developer: **Antonio Lobusto**
+### Author-developer: **Antonio Lobusto**
 
 * [General Info](#generalinfo)
 * [Technologies](#technologies)
 * [Dashboard and tools](#dashboardandtools)
 * [Vision](#vision)
 * [Next Level](#nextlevel)
+* [Preview] (#preview)
 
 
 
