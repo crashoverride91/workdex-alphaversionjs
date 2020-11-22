@@ -34,7 +34,7 @@ The user dashboard is a composite layout of five "modules" (divs) that each host
 Tools list:
 
 1. Calculator
-2. Task List
+2. ToDo List
 3. Weather App
 4. Calendar
 5. Contacts Book
@@ -50,3 +50,7 @@ This first version is a starting point of what the app will actually be in its f
 ## Next level
 The next step is to switch to a beta version with user memory data. I will form a development team for the actual implementation of the web app. The language I will focus on will be php with Laravel support.
 Most likely, we will open another shared repository for the beta.
+
+## Preview
+
+![Web App Preview](./media/Preview.png);
