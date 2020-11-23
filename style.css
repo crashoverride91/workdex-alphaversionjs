@@ -104,6 +104,7 @@ h1{
 }
 
 
+
 /* APP TITLES */
 .app-heading{
 
@@ -790,7 +791,8 @@ h1{
 
     @media screen and (max-width: 800px) {
 
-        
+      
+
         #CalculatorJS{
 
             width:100%;

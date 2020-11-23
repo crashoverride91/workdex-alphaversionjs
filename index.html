@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> <!-- JQuery -->
     <!-- JS Calendar Libray -->
      <!-- jsCalendar v1.4.3 Javascript and CSS from unpkg cdn -->
      <script src="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.js" integrity="sha384-JqNLUzAxpw7zEu6rKS/TNPZ5ayCWPUY601zaig7cUEVfL+pBoLcDiIEkWHjl07Ot" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.css" integrity="sha384-+OB2CadpqXIt7AheMhNaVI99xKH8j8b+bHC8P5m2tkpFopGBklD3IRvYjPekeWIJ" crossorigin="anonymous">
+     <script src="//code.jquery.com/jquery-1.12.4.js"></script> <!-- Jquery -->
+     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!-- Jquery -->
 </head>
 <body>
 
@@ -26,11 +29,11 @@
     
 
     <div class="areabtn">
-        <button onclick="myFunction()" class="btn-ord selected"><p>ToDo List </p> <img src="./media/clipboard.png" alt="" class="imagex"></button>
-        <button onclick="myCalculator()" class="btn-ord selected"><p>Calculator</p><img src="./media/calculator.png" alt="" class="imagex"></button>
-        <button onclick="myWeatherFunction()" class="btn-ord selected"> <p>Weather</p><img src="./media/weather.png" alt="" class="imagex"></button>
-        <button onclick="myTechFunction()" class="btn-ord selected"> <p>Calendar</p> <img src="./media/calendar2.png" alt="" class="imagex"></button>
-        <button onclick="myAddress()" class="btn-ord selected"> <p>Contacts Book</p>  <img src="./media/contact.png" alt="" class=""></button>
+        <button onclick="myFunction()" class="btn-ord tog-1 selected"><p>ToDo List </p> <img src="./media/clipboard.png" alt="" class="imagex"></button>
+        <button onclick="myCalculator()" class="btn-ord tog-2 selected"><p>Calculator</p><img src="./media/calculator.png" alt="" class="imagex"></button>
+        <button onclick="myWeatherFunction()" class="btn-ord tog-3 selected"> <p>Weather</p><img src="./media/weather.png" alt="" class="imagex"></button>
+        <button onclick="myTechFunction()" class="btn-ord tog-4 selected"> <p>Calendar</p> <img src="./media/calendar2.png" alt="" class="imagex"></button>
+        <button onclick="myAddress()" class="btn-ord tog-5 selected"> <p>Contacts Book</p>  <img src="./media/contact.png" alt="" class=""></button>
     </div>
     
 
@@ -171,8 +174,8 @@
 
 
    
- 
-   
+
+
 <!-- ToDo List -->
 <script src="todo.js"></script>
 <script src="todoapp.js"></script>
