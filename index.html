@@ -16,6 +16,7 @@
      <link rel="stylesheet" href="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.css" integrity="sha384-+OB2CadpqXIt7AheMhNaVI99xKH8j8b+bHC8P5m2tkpFopGBklD3IRvYjPekeWIJ" crossorigin="anonymous">
      <script src="//code.jquery.com/jquery-1.12.4.js"></script> <!-- Jquery -->
      <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!-- Jquery -->
+     
 </head>
 <body>
 
@@ -29,11 +30,14 @@
     
 
     <div class="areabtn">
-        <button onclick="myFunction()" class="btn-ord tog-1 selected"><p>ToDo List </p> <img src="./media/clipboard.png" alt="" class="imagex"></button>
-        <button onclick="myCalculator()" class="btn-ord tog-2 selected"><p>Calculator</p><img src="./media/calculator.png" alt="" class="imagex"></button>
-        <button onclick="myWeatherFunction()" class="btn-ord tog-3 selected"> <p>Weather</p><img src="./media/weather.png" alt="" class="imagex"></button>
-        <button onclick="myTechFunction()" class="btn-ord tog-4 selected"> <p>Calendar</p> <img src="./media/calendar2.png" alt="" class="imagex"></button>
-        <button onclick="myAddress()" class="btn-ord tog-5 selected"> <p>Contacts Book</p>  <img src="./media/contact.png" alt="" class=""></button>
+
+        <!-- <button onclick="myFunction()" class="btn-ord tog-1 selected"><p>ToDo List </p> <img src="./media/clipboard.png" alt="" class="imagex"></button> -->
+     <button id="todo" class="btn-ord selected"><p>Todo List</p><img src="./media/clipboard.png" alt="" class=""></button>   
+     <button id="weather" class="btn-ord selected"><p>Weather</p><img src="./media/weather.png" alt="" class=""></button>
+     <button id="calendar" class="btn-ord selected"><p>Calendar</p><img src="./media/calendar2.png" alt="" class=""></button>
+     <button id="contact" class="btn-ord selected"><p>Contacts Book</p><img src="./media/contact.png" alt="" class=""></button>
+     <button id="calcur" class="btn-ord selected"><p>Calculator</p><img src="./media/calculator.png" alt="" class="imagex"></button>
+      
     </div>
     
 
@@ -42,7 +46,7 @@
     <div class="area-apps">
 
         <!-- Calculator View -->
-        <div id="CalculatorJS">
+        <div id="CalculatorJS" class="display-app">
 
             <h2 class="app-heading">Calculator </h2>
             <div id="calculator">
@@ -77,10 +81,11 @@
                     <button class="operator" id="=">=</button>
                 </div>
             </div>
+            <button onclick="myAddress()" class="btn-ord tog-2 selected"><p>X Close</p></button>
         </div>
 
         <!-- ToDo List View -->
-        <div id="myTodo">
+        <div id="myTodo" class="display-app">
             <h2 class="app-heading">ToDo List</h2>
             <div class="container-list">
                 <div class="input_div">
@@ -97,10 +102,11 @@
                 </div>
 
             </div>
+            <button onclick="myAddress()" class="btn-ord tog-1 selected"><p>X Close</p></button>
         </div>
 
         <!-- Weather App  -->
-        <div id="myWeather">
+        <div id="myWeather" class="display-app">
             <h2 class="app-heading">Weather </h2>
             <div class="container-box">
                 <div class="app-wrap">
@@ -120,20 +126,22 @@
                   </main>
                 </div>
               </div>
+              <button onclick="myAddress()" class="btn-ord tog-3 selected"><p>X Close</p></button>
         </div>
 
         <!-- Calendar -->
-        <div id="myCalendar">
+        <div id="myCalendar" class="display-app">
             <h2 class="app-heading">Calendar</h2>
             <div class="container-weather">
                 <div class="auto-jsCalendar material-theme custom-purple box">
                 </div>
             </div>
+            <button class="btn-ord tog-4 selected close"> <p> X Close</p></button>
         </div> 
 
   
         <!-- Address Contacts Book View -->
-        <div id="AddressBook">
+        <div id="AddressBook" class="display-app">
             <div class="container-address">
                 <div class="title">
                     <h2 class="app-heading">Contacts Book</h2>
@@ -162,7 +170,10 @@
                     
                 </div>
             </div>
+            <button onclick="myAddress()" class="btn-ord tog-5 selected"> <p> X Close</p></button>
         </div>
+        
+        
 
 
     
@@ -170,34 +181,42 @@
 
 
 
-
-
-
-   
-
-
 <!-- ToDo List -->
 <script src="todo.js"></script>
 <script src="todoapp.js"></script>
+<script src="todoscroll.js"></script>
    
 <!-- Calculator JS -->
 <script src="calculatordiv.js"></script>
 <script src="calculator.js"></script>
+<script src="calculatorscroll.js"></script>
 
 <!-- Address Book JS -->
 <script src="address.js"></script>
-<script src="addressdiv.js"></script>
+<script src="addressdiv.js"></script> <!-- Close App -->
+<script src="contactscroll.js"></script> <!-- Scroll Open app -->
 
 <!-- Weather App-->
 <script src="map.js"></script>
 <script src="mapdiv.js"></script>
+<script src="weatherscroll.js"></script>
 
 <!-- Calendar JS -->
 <!-- jsCalendar script -->
 <script type="text/javascript" src="jsCalendar.js"></script>
 <script src="calendardiv.js"></script>
 <script src="calendar.js"></script>
+<script src="calendarscroll.js"></script>
 
+<script>
+
+
+
+</script>
+
+
+
+    
 
 </body>
 </html>
